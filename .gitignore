@@ -1,6 +1,12 @@
 # h5 data files
 *.h5
 
+#PNG files
+*.png
+
+# .DS_Store files
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
