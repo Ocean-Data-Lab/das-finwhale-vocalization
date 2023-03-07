@@ -4,6 +4,12 @@
 #PNG files
 *.png
 
+# Key files
+*.pem
+
+# Zip files
+*.zip
+
 # .DS_Store files
 .DS_Store
 
