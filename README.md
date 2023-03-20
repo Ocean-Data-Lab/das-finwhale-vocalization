@@ -2,7 +2,7 @@
 
 ## Description
 
-Distributed Acoustic Sensing (DAS) is a technology that enables continuous, real-time measurements along the entire length of a fiber optic cable. When there are acoustic disturbances in the ocean, strain is produced along the cable which creates patterns in time and distance dimensions that differ based on the source of the disturbance. Our goal is to identify all instances of fin whale vocalizations, cluster them together, and visualize these results to identify patterns in the behavioral. 
+Distributed Acoustic Sensing (DAS) is a technology that enables continuous, real-time measurements along the entire length of a fiber optic cable. When there are acoustic disturbances in the ocean, strain is produced along the cable which creates patterns in time and distance dimensions that differ based on the source of the disturbance. Our goal is to identify all instances of fin whale vocalizations, cluster them together, and visualize these results to identify patterns in the behavioral.
 
 ## Configuration
 
@@ -19,6 +19,17 @@ Distributed Acoustic Sensing (DAS) is a technology that enables continuous, real
    ```{bash}
    pip install -e .
    ```
+
+## Data
+
+For this project, all data extracts have been backed up to Google Drive [here](https://drive.google.com/drive/folders/1W_NFEwdf4rf5sju6PIvDdZYjCBmsGh7N?usp=sharing). This folder also contains the final poster that was used for the poster presentation.
+
+We describe some of the extracts that can be found:
+
+- `south_dist_chunked_10000to47495_dx5_fs100_bpf14to35Hz.zip` contains the 256x256 chunked images along the cable distance with each images covering 15s of time . We used this data in the (b) series of notebooks. The data has been downsampled to 100Hz, with 5 channels skipped, bandpass filtered from 14 to 35 Hz and channel number 10,000 to 47,495 used
+- `south_ch_10000to47499_fs100_bpf14to35Hz.zip` contains the same as above with the difference that no channels were skipped and the images are 128x128
+- `processed_clip1k_fs100_bpf1435` contains minute long samples of the entire cable length with the first 5k channels skipped. Used mostly for exploration purposes
+- `processed_256x256_Hunter` contains 256x256 minute long extracts of a shorter range of channels. Used mostly for exploration purposes
 
 ## Project Usage Guide
 
@@ -39,8 +50,8 @@ If you are interested in visualizing the clusters of the data:
 - Note the comments in the code and follow their instructions based on whether you desire to load in current clustering results or create your own.
 
  If you are interested in training the Autoencoder:
- 
- - `03_b_PyTorch Autoencoder Training- all data distance chunked - embedding 16.ipynb` has code to train the Autoencoder model whose embedded layer is the basis for our clustering algorithm
+
+- `03_b_PyTorch Autoencoder Training- all data distance chunked - embedding 16.ipynb` has code to train the Autoencoder model whose embedded layer is the basis for our clustering algorithm
 
  If you are interested in clustering and training an Autoencoder:
 
@@ -49,7 +60,7 @@ If you are interested in visualizing the clusters of the data:
 
  Finally,
 
-- 01_Data Processing Exploration.ipynb contains some data exploration code
+- `01_Data Processing Exploration.ipynb` contains some data exploration code
 
 ## Acknowledgements
 
