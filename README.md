@@ -9,8 +9,8 @@ Distributed Acoustic Sensing (DAS) is a technology that enables continuous, real
 1. Create the conda environment using the `environment.yml` file provided and activate it:
 
    ```{bash}
-   > conda env create -f ooi_dev.yml
-   > conda activate ooi-dev
+   > conda env create -f environment.yml
+   > conda activate ooi_dev_2
 
    ```
 
