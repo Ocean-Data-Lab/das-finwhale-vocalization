@@ -6,6 +6,8 @@ Distributed Acoustic Sensing (DAS) is a technology that enables continuous, real
 
 ## Configuration
 
+This project requires an installation of miniconda which can be found [here](https://docs.conda.io/en/latest/miniconda.html). After the installation, follow the instructions below in a terminal:
+
 1. Create the conda environment using the `environment.yml` file provided and activate it:
 
    ```{bash}
